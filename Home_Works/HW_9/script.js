@@ -1,0 +1,1 @@
+document.querySelector(`div`).innerHTML = "Это <em>курсивный</em> текст";

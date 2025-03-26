@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <form class="form-container" action="#">
+        <fieldset>
+            <legend>Имя</legend>
+            <input name="nachname" type="text" placeholder="Фамилия" autofocus autocomplete="on" required/>
+            <input name="forname" type="text" placeholder="Имя" autocomplete="off" required/>
+        </fieldset>
+        <div class="group">
+        <fieldset>
+            <legend>Пол</legend>
+            <label><input type="radio" name="mailing" value="checkbox">Мужской</label>
+            <label><input type="radio" name="mailing" value="checkbox">Женский</label>
+            <label><input type="radio" name="mailing" value="checkbox">Не хочу говорить</label>
+        </fieldset>
+        <fieldset>
+            <legend>Получить рассылку по</legend>
+            <label><input type="checkbox" name="mailing" value="checkbox">Email</label>
+            <label><input type="checkbox" name="mailing" value="checkbox">СМС</label>
+        </fieldset>
+        </div>
+        <div class="button">
+            <button type="submit">Отправить</button>
+        </div>
+    </form>
+    
+    
+</body>
+</html>

@@ -1,0 +1,168 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+  ;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.menu-item {
+  padding-left: 15px;
+}
+
+li {
+  display: inline-block;
+  list-style-type: none;
+}
+
+nav {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  height: 30px;
+  background: hwb(212 3% 64%);
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  background:hwb(212 3% 64%);
+  min-width: 160px;
+  z-index: 1;
+}
+
+.submenu li {
+  display: block;
+  text-align: left;
+  padding: 12px 16px;
+  text-decoration: none;
+  color: hwb(212 3% 64%);
+  border-bottom: 1px solid #ddd;
+}
+
+.menu li:hover .submenu {
+  display: block;
+}
+
+.logo {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 30%;
+  background: hwb(212 3% 64%);
+}
+.registration {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  width: 70%;
+  gap: 15px;
+  padding-right: 0.5%;
+  background: hwb(212 3% 64%);
+}
+
+input{
+    display: inline-block;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.popup-content {
+  background: white;
+  padding: 20px;
+  width: 320px;
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+  transform: scale(0.8);
+  transition: transform 0.3s ease;
+}
+
+.popup-content h2 {
+  margin-bottom: 15px;
+}
+
+.popup-content input {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  outline: none;
+  border-radius: 5px;
+}
+
+.popup-content button {
+  padding: 12px;
+  width: 100%;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.close-popup-reg, .close-popup-auth {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 20px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+#register.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+#register.show .popup-content {
+  transform: scale(1);
+}
+
+#authorization.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+#authorization.show .popup-content {
+  transform: scale(1);
+}
+
+.open-popup-reg.hid {
+  display: none;
+}
+
+.open-popup-auth.hid {
+  display: none;
+}
+
+p {
+  color: red;
+  font-size: 18px;
+}

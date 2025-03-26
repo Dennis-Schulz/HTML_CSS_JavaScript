@@ -1,0 +1,19 @@
+@import "_variables.scss";
+@import "_mixins.scss";
+
+.container {
+    width: $container-width;
+    margin: auto;
+    padding: 20px;
+    background-color: #ec9f9f;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+    }
+}
+
+.button {
+    @include button-styles(#007bff, #ffffff);
+}

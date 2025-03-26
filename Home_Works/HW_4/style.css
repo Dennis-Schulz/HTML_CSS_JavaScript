@@ -1,0 +1,21 @@
+* {
+  margin: 10px;
+  padding: 0;
+}
+
+body{
+  position: relative;
+  height: 2000px;
+  border-left: 2px solid grey;
+}
+
+h2{
+  position: sticky;
+  top: 0px;
+  background-color: rgb(248, 160, 208);
+  font-size: 1.5rem;
+}
+
+p{  
+  font-size: 1.1rem;
+}

@@ -1,0 +1,24 @@
+body{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button{
+  height: 30%;
+  width: 50%;
+  font-size: 2rem;
+  transition: all 2s ease-out;
+}
+
+button:hover{
+  background: linear-gradient(#3535f2, #081178);
+  border-radius: 10%;
+  border: 10px green;
+  color: aliceblue;
+}
+
+button:active::after{
+  content:" - Кнопка нажата";
+} 

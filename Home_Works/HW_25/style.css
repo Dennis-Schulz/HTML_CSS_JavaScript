@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.frame {
+  width: 500px;
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.cards {
+  display: grid;
+  grid-auto-flow: column;
+  position: absolute;
+  transition: left 0.5s ease;
+  left: 0;
+}
+
+.card {
+  background-size: cover;
+  background-position: center;
+  width: 500px;
+  height: 500px;
+}
+
+.rounds {
+  position: absolute;
+  z-index: 2;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 15px;
+}
+
+.rounds button {
+  width: 20px;
+  height: 20px;
+  background-color: #ecf0f1;
+  border: 2px solid black;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.rounds .active {
+  background-color: green;
+}
+
+.trigger {
+  position: absolute;
+  z-index: 2;
+  bottom: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.trigger button {
+  margin-inline: 10px;
+  font-size: 40px;
+  color:  white;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.trigger button:hover {
+  color: green;
+}

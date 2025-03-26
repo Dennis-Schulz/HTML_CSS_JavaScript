@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Домашнее задание</title>
+  </head>
+  <body>
+    <fieldset>
+      <legend>Задание 1</legend>
+      <input type="number" id="a" placeholder="Введите число" />
+      <select id="operator">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+      </select>
+      <input type="number" id="b" placeholder="Введите число" />
+      <button onclick="calculate(parseFloat(document.getElementById('a').value), parseFloat(document.getElementById('b').value), document.getElementById('operator').value)">Рассчитать</button>
+      <p id="result"></p>
+    </fieldset>
+    <fieldset>
+      <legend>Задание 2</legend>
+      <input style="width: 300px" type="text" id="input2" placeholder="Введите массив чисел через пробел">
+    <button onclick="calculateSum()">Рассчитать</button>
+    <p id="result2"></p>
+    </fieldset>
+    <fieldset>
+      <legend>Задание 3</legend>
+      <select name="#" id="name">
+        <option value="Иван">Иван</option>
+        <option value="Мария">Мария</option>
+        <option value="Алексей">Алексей</option>
+        <option value="Ольга">Ольга</option>
+        <option value="Дмитрий">Дмитрий</option>
+      </select>
+      <button onclick="displayStudentInfo(document.getElementById('name').value)">Показать информацию</button>
+    <p id="result3"></p>
+    </fieldset>
+    <script src="script.js"></script>
+  </body>
+</html>

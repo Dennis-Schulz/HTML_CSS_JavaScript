@@ -1,0 +1,27 @@
+.container {
+  width: 960px;
+  margin: auto;
+  padding: 20px;
+  background-color: #ec9f9f;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+}
+.button {
+  background-color: #007bff;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+.button:hover {
+  background-color: rgb(0, 98.4, 204);
+}
+
+/*# sourceMappingURL=style.css.map */

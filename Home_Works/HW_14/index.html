@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <ul class="menu">
+            <li class="menu-item">
+              <a href="#">Меню 1</a>
+              <ul class="submenu">
+                <li><a href="#">Меню 1.1</a></li>
+                <li><a href="#">Меню 1.2</a></li>
+                <li><a href="#">Меню 1.3</a></li>
+              </ul>
+            </li>
+            <li class="menu-item">
+              <a href="#">Меню 2</a>
+              <ul class="submenu">
+                <li><a href="#">Меню 2.1</a></li>
+                <li><a href="#">Меню 2.2</a></li>
+                <li><a href="#">Меню 2.3</a></li>
+              </ul>
+            </li>
+            <li class="menu-item">
+              <a href="#">Меню 3</a>
+              <ul class="submenu">
+                <li><a href="#">Меню 3.1</a></li>
+                <li><a href="#">Меню 3.2</a></li>
+                <li><a href="#">Меню 3.3</a></li>
+              </ul>
+            </li>
+            <li class="menu-item">
+              <a href="#">Меню 4</a>
+              <ul class="submenu">
+                <li><a href="#">Меню 4.1</a></li>
+                <li><a href="#">Меню 4.2</a></li>
+                <li><a href="#">Меню 4.3</a></li>
+              </ul>
+            </li>
+            <li class="menu-item">
+              <a href="#">Меню 5</a>
+              <ul class="submenu">
+                <li><a href="#">Меню 5.1</a></li>
+                <li><a href="#">Меню 5.2</a></li>
+                <li><a href="#">Меню 5.3</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="registration">
+          <ul class="menu">
+            <li class="menu-item">
+              <a href="#" id="user"></a>
+              <ul class="submenu">
+                <li><a href="#">Профиль</a></li>
+                <li><a href="#">Настройки</a></li>
+                <li><a href="#" id="log-out">Выход</a></li>
+              </ul>
+            </li>
+          </ul>
+          <a href="#" class="open-popup-reg">Sign up</a>
+          <a href="#" class="open-popup-auth">Log in</a>
+        </div>
+      </nav>
+    </header>
+    <form id="form" novalidate action="#">
+      <div id="register" class="popup">
+        <div class="popup-content">
+          <a href="#" class="close-popup-reg">&times;</a>
+          <h2>Регистрация</h2>
+          <input id="regName" autocomplete="off" type="text" placeholder="Имя" />
+          <input id="regTel" autocomplete="off" type="tel" placeholder="Телефон" />
+          <input id="regMail" autocomplete="off" type="email" placeholder="Email" />
+          <input id="regPasswrord" autocomplete="off" type="password" placeholder="Пароль" />
+          <button type="submit" id="sign-up">Зарегистрироваться</button>
+        </div>
+      </div>
+    <div id="authorization" class="popup">
+      <div class="popup-content popup-content-auth">
+        <a href="#" class="close-popup-auth">&times;</a>
+        <h2>Авторизация</h2>
+        <input id="authMail" autocomplete="off" type="email" placeholder="Email" />
+        <input id="authPasswrord" autocomplete="off" type="password" placeholder="Пароль" />
+        <button type="submit" id="log-in">Войти</button>
+      </div>
+    </div>
+  </form>
+    <script src="script.js"></script>
+  </body>
+</html>

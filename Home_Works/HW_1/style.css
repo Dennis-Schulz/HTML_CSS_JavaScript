@@ -1,0 +1,36 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: #add8e6;
+}
+
+h1 {
+  font-size: 24px;
+  color: rgb(255, 255, 255);
+  background: rgb(61, 61, 61);
+  padding: 8px;
+}
+
+h2 {
+  font-size: 24px;
+  margin: 8px 8px;
+}
+
+p {
+  font-size: 16px;
+  margin: 8px 8px;
+}
+
+div {
+  background: rgb(0, 255, 255);
+  padding: 2px 2px 2px 2px;
+  margin: 16px 8px;
+  border-radius: 10px;
+}
+
+h3 {
+  font-size: 16px;
+  margin: 8px 8px;
+}
